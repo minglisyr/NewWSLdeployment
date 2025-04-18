@@ -19,8 +19,9 @@ source ~/.bashrc
 brew install tree
 brew install uv
 
-# Neovim installation
+# neovim installation
 brew install neovim
 git clone https://github.com/LazyVim/starter ~/.config/nvim
 rm -rf ~/.config/nvim/.git
 nvim
+
