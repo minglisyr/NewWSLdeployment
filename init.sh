@@ -25,3 +25,9 @@ git clone https://github.com/LazyVim/starter ~/.config/nvim
 rm -rf ~/.config/nvim/.git
 nvim
 
+cd ~/.local/share/nvim/lazy
+rm snacks.nvim.cloning
+cd snacks.nvim
+git restore --source=HEAD :/
+
+
