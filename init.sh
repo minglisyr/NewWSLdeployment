@@ -15,11 +15,8 @@ oh-my-posh font install meslo
 echo 'eval "$(oh-my-posh init bash --config $(brew --prefix oh-my-posh)/themes/microverse-power.omp.json)"' >> ~/.bashrc
 source ~/.bashrc
 
-# tree and uv installation
-brew install tree
-brew install uv
-brew install fzf
-brew install pyright
+# Tools installation
+brew install tree uv fzf pyright fastfetch ruff
 
 # neovim installation
 brew install neovim
