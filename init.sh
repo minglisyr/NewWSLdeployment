@@ -18,12 +18,19 @@ source ~/.bashrc
 # tree and uv installation
 brew install tree
 brew install uv
+brew install fzf
+brew install pyright
 
 # neovim installation
 brew install neovim
 git clone https://github.com/LazyVim/starter ~/.config/nvim
 rm -rf ~/.config/nvim/.git
 nvim
+
+cd $HOME
+uv venv
+source .venv/bin/activate
+uv pip install vtk matplotlib numpy pandas
 
 cd ~/.local/share/nvim/lazy
 rm snacks.nvim.cloning
