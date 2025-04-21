@@ -5,18 +5,12 @@
       "alignment": "left",
       "segments": [
         {
-          "upgrade": {
-            "notice": true,
-            "interval": "168h",
-            "auto": false,
-            "source": "cdn"
-          }
-        },
-        {
-     	    "type": "python",
-     	    "style": "plain",
-          "environment": true,
-          "format": "{{green}}{{(environment)}} "
+          "background": "#906cff",
+          "foreground": "#100e23",
+          "powerline_symbol": "\ue0b0",
+          "style": "powerline",
+          "template": " \ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }} ",
+          "type": "python"
         },
         {
           "foreground": "#3A86FF",
