@@ -17,9 +17,7 @@ pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org uv --b
 pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org ruff --break-system-packages
 pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org pyright --break-system-packages
 
-sudo add-apt-repository ppa:zhangsongcui3371/fastfetch
-sudo apt update
-sudo apt install fastfetch
+source build fastfetch >> https://github.com/fastfetch-cli/fastfetch/wiki/Building
 
 # neovim installation
 sudo apt install neovim -y
@@ -33,6 +31,7 @@ uv venv
 source .venv/bin/activate
 
 git config --global http.sslVerify true
+
 uv pip install vtk matplotlib numpy pandas
 
 cd ~/.local/share/nvim/lazy
