@@ -12,6 +12,9 @@ brew install gcc
 # Oh-My-Posh installation
 brew install jandedobbeleer/oh-my-posh/oh-my-posh
 oh-my-posh font install meslo
+
+curl -O https://raw.githubusercontent.com/minglisyr/NewWSLdeployment/main/microverse-power.omp.json
+mv microverse-power.omp.json $(brew --prefix oh-my-posh)/themes/
 echo 'eval "$(oh-my-posh init bash --config $(brew --prefix oh-my-posh)/themes/microverse-power.omp.json)"' >> ~/.bashrc
 source ~/.bashrc
 
