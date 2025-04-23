@@ -24,6 +24,10 @@ pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org pyrigh
 
 source build fastfetch >> https://github.com/fastfetch-cli/fastfetch/wiki/Building
 
+# vim plugins installation
+git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
+sh ~/.vim_runtime/install_awesome_vimrc.sh
+
 # neovim installation
 curl -kLO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
 sudo rm -rf /opt/nvim
