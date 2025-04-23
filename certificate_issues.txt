@@ -3,5 +3,7 @@ git config --list --show-origin --show-scope
 system  file:C:/Program Files/Git/etc/gitconfig http.sslbackend=openssl
 system  file:C:/Program Files/Git/etc/gitconfig http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
 
+curl --remote-name --time-cond cacert.pem https://curl.se/ca/cacert.pem
+
 sudo cp your-company-ca.crt /usr/local/share/ca-certificates/
 sudo update-ca-certificates
