@@ -6,8 +6,8 @@ sudo apt update && sudo apt upgrade -y
 echo >> ~/.bashrc
 echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> ~/.bashrc
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-sudo apt-get install build-essential -y
-brew install gcc
+sudo apt-get install build-essential kitty -y
+
 
 # Oh-My-Posh installation
 brew install jandedobbeleer/oh-my-posh/oh-my-posh
@@ -20,6 +20,8 @@ source ~/.bashrc
 
 # Tools installation
 brew install tree uv fzf pyright fastfetch ruff fd luarocks ripgrep imagemagick gs tectonic lazygit pyvim xclip
+
+npm install -g @mermaid-js/mermaid-cli
 
 python3 -m venv ~/.nvim-python
 source ~/.nvim-python/bin/activate
