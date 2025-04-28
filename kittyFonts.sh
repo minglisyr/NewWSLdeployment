@@ -3,7 +3,7 @@
 # kitty fonts settings
 wget https://github.com/ryanoasis/nerd-fonts/releases/latest/download/Meslo.zip
 unzip Meslo.zip -d ~/.local/share/fonts/
-fc-cache -fv
+sudo fc-cache -fv
 
 # Path to kitty config file
 CONFIG_FILE="$HOME/.config/kitty/kitty.conf"
@@ -24,4 +24,5 @@ echo -e "\n# Font configuration (added by script)" >> "$CONFIG_FILE"
 echo "$FONT_CONFIG" >> "$CONFIG_FILE"
 echo "Updated kitty font configuration in $CONFIG_FILE"
 
-KITTY_DISABLE_WAYLAND=1 kitty
+echo 'alias kittyx="KITTY_DISABLE_WAYLAND=1 kitty"' >> ~/.bashrc
+source ~/.bashrc
