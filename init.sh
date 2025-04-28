@@ -19,7 +19,11 @@ echo 'eval "$(oh-my-posh init bash --config $(brew --prefix oh-my-posh)/themes/m
 source ~/.bashrc
 
 # Tools installation
-brew install tree uv fzf pyright fastfetch ruff fd luarocks ripgrep pynvim pyvim kitty
+brew install tree uv fzf pyright fastfetch ruff fd luarocks ripgrep imagemagick gs tectonic lazygit pyvim
+
+python3 -m venv ~/.nvim-python
+source ~/.nvim-python/bin/activate
+pip3 install pynvim
 
 # neovim installation
 brew install neovim
