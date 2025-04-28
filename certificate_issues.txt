@@ -7,3 +7,7 @@ curl --remote-name --time-cond cacert.pem https://curl.se/ca/cacert.pem
 
 sudo cp your-company-ca.crt /usr/local/share/ca-certificates/
 sudo update-ca-certificates
+
+
+openssl s_client -showcerts -connect github.com:443 -servername github.com
+
