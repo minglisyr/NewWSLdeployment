@@ -4,6 +4,7 @@
 wget https://github.com/ryanoasis/nerd-fonts/releases/latest/download/Meslo.zip
 unzip Meslo.zip -d ~/.local/share/fonts/
 sudo fc-cache -fv
+rm Meslo.zip
 
 # Path to kitty config file
 CONFIG_FILE="$HOME/.config/kitty/kitty.conf"
