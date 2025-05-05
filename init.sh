@@ -22,6 +22,16 @@ source ~/.bashrc
 # Tools installation
 brew install tree uv fzf pyright fastfetch ruff fd luarocks ripgrep imagemagick gs tectonic lazygit pyvim xclip
 
+# uv customization
+echo '# Define an alias for uv venv
+uvv() {
+  if [ -z "$1" ]; then
+    uv venv && source .venv/bin/activate
+  else
+    uv venv "$1" && source "$1/bin/activate"
+  fi
+}' >> ~/.bashrc
+
 # neovim installation
 brew install neovim
 git clone https://github.com/LazyVim/starter ~/.config/nvim
