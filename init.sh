@@ -8,7 +8,6 @@ echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> ~/.bashrc
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 sudo apt-get install build-essential gcc kitty -y
 
-
 # Oh-My-Posh installation
 brew install oh-my-posh
 oh-my-posh font install meslo
@@ -38,18 +37,15 @@ git clone https://github.com/LazyVim/starter ~/.config/nvim
 rm -rf ~/.config/nvim/.git
 nvim
 
-
 python3 -m venv ~/.nvim-python
 source ~/.nvim-python/bin/activate
 pip3 install pynvim
 
 npm install @mermaid-js/mermaid-cli
 
-'''
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
-'''
+# alias ll='ls -alF'
+# alias la='ls -A'
+# alias l='ls -CF'
 
 '''
 cd $HOME
