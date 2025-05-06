@@ -46,6 +46,12 @@ pip3 install pynvim
 npm install @mermaid-js/mermaid-cli
 
 '''
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+'''
+
+'''
 cd $HOME
 uv venv
 source .venv/bin/activate
