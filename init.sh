@@ -6,7 +6,10 @@ sudo apt update && sudo apt upgrade -y
 echo >> ~/.bashrc
 echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> ~/.bashrc
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-sudo apt-get install build-essential gcc kitty -y
+sudo apt-get install build-essential gcc kitty mupdf -y
+
+# Register mupdf as default viewer for PDF
+xdg-mime default mupdf.desktop application/pdf
 
 # Oh-My-Posh installation
 brew install oh-my-posh
