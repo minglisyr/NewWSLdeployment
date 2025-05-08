@@ -46,6 +46,8 @@ pip3 install pynvim
 
 npm install @mermaid-js/mermaid-cli
 
+curl -O https://raw.githubusercontent.com/minglisyr/dotfiles/main/.vimrc
+curl -O https://raw.githubusercontent.com/minglisyr/dotfiles/main/.tmux.conf
 # alias ll='ls -alF'
 # alias la='ls -A'
 # alias l='ls -CF'
