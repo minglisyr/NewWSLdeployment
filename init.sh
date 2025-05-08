@@ -42,7 +42,7 @@ nvim
 
 python3 -m venv ~/.nvim-python
 source ~/.nvim-python/bin/activate
-pip3 install pynvim
+pip3 install pynvim --trusted-host pypi.org --trusted-host files.pythonhosted.org
 
 npm install @mermaid-js/mermaid-cli
 
