@@ -92,19 +92,19 @@
       "segments": [
         {
           "type": "text",
-          "template": ">",
+          "template": "\u276f",
           "foreground": "#3A86FF",   // Blue
           "style": "plain"
         },
         {
           "type": "text",
-          "template": ">",
+          "template": "\u276f",
           "foreground": "#33DD2D",   // Green
           "style": "plain"
         },
         {
           "type": "text",
-          "template": "> ",
+          "template": "\u276f ",
           "foreground": "#f1184c",   // Red
           "style": "plain"
         }
