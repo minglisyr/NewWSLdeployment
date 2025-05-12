@@ -91,10 +91,22 @@
       "newline": true,
       "segments": [
         {
-          "foreground": "#f1184c",
-          "style": "plain",
-          "template": "\u279c ",
-          "type": "text"
+          "type": "text",
+          "template": ">",
+          "foreground": "#3A86FF",   // Blue
+          "style": "plain"
+        },
+        {
+          "type": "text",
+          "template": ">",
+          "foreground": "#33DD2D",   // Green
+          "style": "plain"
+        },
+        {
+          "type": "text",
+          "template": "> ",
+          "foreground": "#f1184c",   // Red
+          "style": "plain"
         }
       ],
       "type": "prompt"
