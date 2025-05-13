@@ -118,8 +118,14 @@ if ! shopt -oq posix; then
 fi
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-eval "$(oh-my-posh init bash --config $HOME/.config/oh-my-posh/microverse-power.omp.json)"
+
+# Only initialize Oh My Posh if running in a graphical terminal
+if [[ -n "$DISPLAY" ]] || [[ -n "$WAYLAND_DISPLAY" ]] || [[ "$TERM_PROGRAM" == "vscode" ]] || [[ "$COLORTERM" == "truecolor" ]]; then
+    eval "$(oh-my-posh init bash --config $HOME/.config/oh-my-posh/microverse-power.omp.json)"
+fi
+
 alias kittyx="KITTY_DISABLE_WAYLAND=1 kitty"
+
 # Define an alias for uv venv
 uvv() {
   if [ -z "$1" ]; then
