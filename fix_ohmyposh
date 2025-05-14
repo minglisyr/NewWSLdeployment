@@ -1,0 +1,6 @@
+brew --prefix oh-my-posh
+ls -l $(brew --prefix)/bin/oh-my-posh
+
+eval "$($(brew --prefix)/bin/oh-my-posh init bash)"
+brew reinstall oh-my-posh
+
