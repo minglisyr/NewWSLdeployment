@@ -18,7 +18,13 @@ oh-my-posh font install meslo
 curl -O https://raw.githubusercontent.com/minglisyr/NewWSLdeployment/main/microverse-power.omp.json
 mkdir $HOME/.config/oh-my-posh/
 mv microverse-power.omp.json $HOME/.config/oh-my-posh/
-echo 'eval "$(oh-my-posh init bash --config $HOME/.config/oh-my-posh/microverse-power.omp.json)"' >> ~/.bashrc
+
+echo '# Only initialize Oh My Posh if running in a graphical terminal
+if [[ -n "$DISPLAY" ]] || [[ -n "$WAYLAND_DISPLAY" ]] || [[ "$TERM_PROGRAM" == "vscode" ]] || [[ "$COLORTERM" == "truecolor" ]]; then
+    eval "$($(brew --prefix)/bin/oh-my-posh init bash --config $HOME/.config/oh-my-posh/microverse-power.omp.json)"
+fi
+' >> ~/.bashrc
+
 source ~/.bashrc
 
 # Tools installation
