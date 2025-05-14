@@ -121,7 +121,7 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 # Only initialize Oh My Posh if running in a graphical terminal
 if [[ -n "$DISPLAY" ]] || [[ -n "$WAYLAND_DISPLAY" ]] || [[ "$TERM_PROGRAM" == "vscode" ]] || [[ "$COLORTERM" == "truecolor" ]]; then
-    eval "$(oh-my-posh init bash --config $HOME/.config/oh-my-posh/microverse-power.omp.json)"
+    eval "$($(brew --prefix)/bin/oh-my-posh init bash --config $HOME/.config/oh-my-posh/microverse-power.omp.json)"
 fi
 
 alias kittyx="KITTY_DISABLE_WAYLAND=1 kitty"
