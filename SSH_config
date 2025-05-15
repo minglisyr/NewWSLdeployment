@@ -1,0 +1,12 @@
+Server:
+  sudo pacman -Syu openssh
+  sudo systemctl start sshd
+  sudo systemctl enable sshd
+  ip addr
+
+  sudo ufw allow ssh
+  sudo firewall-cmd --add-service=ssh --permanent
+  sudo firewall-cmd --reload
+
+Client:
+  ssh username@server_ip
