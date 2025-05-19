@@ -10,3 +10,10 @@ Server:
 
 Client:
   ssh username@server_ip
+
+
+For Windows 11:
+  Get-WindowsCapability -Online | ? Name -like 'OpenSSH.Server*'
+
+  Start-Service -Name "sshd"
+  Set-Service -Name "sshd" -StartupType Automatic
