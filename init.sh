@@ -57,7 +57,7 @@ curl -O https://raw.githubusercontent.com/minglisyr/dotfiles/main/.tmux.conf
 # alias ll='ls -alF'
 # alias la='ls -A'
 # alias l='ls -CF'
-# alias brewuu='brew update && brew upgrade'
+# alias brewuu='brew update && brew upgrade && exec bash'
 
 '''
 cd $HOME
